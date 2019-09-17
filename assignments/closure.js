@@ -2,7 +2,10 @@
 // Write a closure of your own creation.
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
-// The outer scope can be a parent function, or the top level of the script.
+//er scope can be a parent function, or the top level of the script.
+let i = 10;
+
+function parent() { let j = 20; function child() {let k = 9;  let total = i + j * k; return total} return child}
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
