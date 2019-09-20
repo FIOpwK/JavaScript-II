@@ -2,7 +2,7 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
-/* 
+
 
   // GIVEN THIS PROBLEM:
 
@@ -36,31 +36,41 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
   const test2 = firstItem(items, logExorbitantPrice);
   console.log(test2); // "this Pencil is worth a million dollars!"
-*/
+
 
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
-
+  return (arr.length);
 }
+console.log(getLength(items));
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
+return (arr[3]);
 }
+console.log(last(items));
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return (x + y)
 }
+console.log(sumNums(4,6));
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  return (x * y)
 }
+console.log(multiplyNums(4,6));
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  if (list.includes(item)) {
+    return `the list has ${item}`;
+  }
 }
-
+console.log(contains(items, 'Pencil'))
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {

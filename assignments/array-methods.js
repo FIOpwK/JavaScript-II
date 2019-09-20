@@ -87,9 +87,7 @@ console.log(ticketPriceTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
-"I need to find out if a name contains any letters from a given array of letter"
-"I would use .forEach as: arr.forEach(function(letter){if (name.includes(letters)) {return name.split('letter').length - 1}})"
-"this would tell me each matching letter and give a count of how many times it appears."
+
 
 // Problem 2
 
